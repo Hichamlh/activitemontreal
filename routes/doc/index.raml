@@ -1,0 +1,91 @@
+#%RAML 1.0
+---
+title: Services des installations récréatives de Montréal
+baseUri: http://localhost:3000
+version: 1
+
+/installations:
+  get:
+    description: Fournir la liste des installations de la ville de Montréal.
+    queryParameters:
+      arrondissement:
+        description: Nom arrondissement.
+        type: string
+        required: true
+        example: "LaSalle"
+    responses:
+      200:
+        description: La liste des installations pour un arrondissement spécifié en paramètre.
+        body:
+          application/json:
+            schema: !include ../schemas/installations-output.json
+      400:
+        description: Le format du Nom spécifié est invalide.
+      500:
+        description: Une erreur interne s'est produite.
+
+/installationMauvaise:
+  /json:
+    get:
+      description: Fournir la liste des installations en mauvaise condition.
+      responses:
+        200:
+          description: La liste des installations en mauvaise condition, La liste est triée en ordre croissant du nom de l'installation.
+          body:
+            application/json:
+              schema: !include ../schemas/installationMauvaise-output.json
+        500:
+          description: Une erreur interne s'est produite.
+  /xml:
+    get:
+      description: Fournir la liste des installations en mauvaise condition.
+      responses:
+        200:
+          description: La liste des installations en mauvaise condition, La liste est triée en ordre croissant du nom de l'installation.
+          body:
+            application/xml:
+        500:
+          description: Une erreur interne s'est produite.
+  /csv:
+    get:
+      description: Fournir la liste des installations en mauvaise condition.
+      responses:
+        200:
+          description: La liste des installations en mauvaise condition, La liste est triée en ordre croissant du nom de l'installation.
+          body:
+            application/csv:
+        500:
+          description: Une erreur interne s'est produite.
+/installationParNom:
+  get:
+    description: Fournir les informations sur une installation par nom.
+    queryParameters:
+      resto:
+        description: Un nom d'installation.
+        type: string
+        required: true
+        example: Aire%20de%20glissade,%20Le%20Ber
+    responses:
+      200:
+        description: Les informations sur une installation par nom.
+        body:
+          application/json:
+            schema: !include ../schemas/installationParNom-output.json
+      400:
+        description: Installation non spécifié.
+      404:
+        description: L'installation spécifié n'existe pas.
+      500:
+        description: Une erreur interne s'est produite.
+
+/getNomInstallation:
+  get:
+    description: Fournir la liste des installations.
+    responses:
+      200:
+        description: La liste triée des installations a été correctement envoyée.
+        body:
+          application/json:
+            schema: !include ../schemas/listeInstallations-output.json
+      500:
+        description: Une erreur interne s'est produite.

@@ -1,0 +1,212 @@
+   {
+     "definitions": {},
+     "$schema": "http://json-schema.org/draft-06/schema#",
+     "$id": "http://example.com/example.json",
+     "type": "array",
+     "items": {
+       "$id": "http://example.com/example.json/items",
+       "type": "object",
+       "properties": {
+        "typeInstallation": {
+          "$id": "http://example.com/example.json/items/properties/typeInstallation",
+          "type": "string",
+          "title": "The Typeinstallation Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "piscine"
+          ]
+        },
+        "nom": {
+          "$id": "http://example.com/example.json/items/properties/nom",
+          "type": "string",
+          "title": "The Nom Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Bain L\u00e9vesque"
+          ]
+        },
+        "arrondissement": {
+          "$id": "http://example.com/example.json/items/properties/arrondissement",
+          "type": "string",
+          "title": "The Arrondissement Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Le Plateau-Mont-Royal"
+          ]
+        },
+        "cle": {
+          "$id": "http://example.com/example.json/items/properties/cle",
+          "type": "string",
+          "title": "The Cle Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "date_maj": {
+          "$id": "http://example.com/example.json/items/properties/date_maj",
+          "type": "string",
+          "title": "The Date_maj Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "ouvert": {
+          "$id": "http://example.com/example.json/items/properties/ouvert",
+          "type": "string",
+          "title": "The Ouvert Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "deblaye": {
+          "$id": "http://example.com/example.json/items/properties/deblaye",
+          "type": "string",
+          "title": "The Deblaye Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "arrose": {
+          "$id": "http://example.com/example.json/items/properties/arrose",
+          "type": "string",
+          "title": "The Arrose Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+        "resurface": {
+          "$id": "http://example.com/example.json/items/properties/resurface",
+          "type": "string",
+          "title": "The Resurface Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            ""
+          ]
+        },
+       "condition": {
+         "$id": "http://example.com/example.json/items/properties/condition",
+         "type": "string",
+         "title": "The Condition Schema.",
+         "description": "An explanation about the purpose of this instance.",
+         "default": "",
+         "examples": [
+           ""
+         ]
+       },
+       "ID_UEV": {
+         "$id": "http://example.com/example.json/items/properties/ID_UEV",
+         "type": "string",
+         "title": "The Id_uev Schema.",
+         "description": "An explanation about the purpose of this instance.",
+         "default": "",
+         "examples": [
+           "1017231"
+         ]
+       },
+       "TYPE": {
+         "$id": "http://example.com/example.json/items/properties/TYPE",
+         "type": "string",
+         "title": "The Type Schema.",
+         "description": "An explanation about the purpose of this instance.",
+         "default": "",
+         "examples": [
+           "Piscine int\u00e9rieure"
+         ]
+       },
+       "ADRESSE": {
+         "$id": "http://example.com/example.json/items/properties/ADRESSE",
+         "type": "string",
+         "title": "The Adresse Schema.",
+         "description": "An explanation about the purpose of this instance.",
+         "default": "",
+         "examples": [
+           "955, Rue Marie-Anne Est"
+         ]
+       },
+       "PROPRIETE": {
+         "$id": "http://example.com/example.json/items/properties/PROPRIETE",
+         "type": "string",
+         "title": "The Propriete Schema.",
+         "description": "An explanation about the purpose of this instance.",
+         "default": "",
+         "examples": [
+           "Municipale"
+         ]
+       },
+       "GESTION": {
+         "$id": "http://example.com/example.json/items/properties/GESTION",
+         "type": "string",
+         "title": "The Gestion Schema.",
+         "description": "An explanation about the purpose of this instance.",
+         "default": "",
+         "examples": [
+           "Municipale"
+         ]
+       },
+       "POINT_X": {
+         "$id": "http://example.com/example.json/items/properties/POINT_X",
+         "type": "string",
+         "title": "The Point_x Schema.",
+         "description": "An explanation about the purpose of this instance.",
+         "default": "",
+         "examples": [
+           "298715,0666"
+         ]
+       },
+       "POINT_Y": {
+         "$id": "http://example.com/example.json/items/properties/POINT_Y",
+         "type": "string",
+         "title": "The Point_y Schema.",
+         "description": "An explanation about the purpose of this instance.",
+         "default": "",
+         "examples": [
+           "5042928684"
+         ]
+       },
+       "EQUIPEME": {
+         "$id": "http://example.com/example.json/items/properties/EQUIPEME",
+         "type": "string",
+         "title": "The Equipeme Schema.",
+         "description": "An explanation about the purpose of this instance.",
+         "default": "",
+         "examples": [
+           "Piscine r\u00e9cr\u00e9ative"
+         ]
+       },
+       "LONG": {
+         "$id": "http://example.com/example.json/items/properties/LONG",
+         "type": "string",
+         "title": "The Long Schema.",
+         "description": "An explanation about the purpose of this instance.",
+         "default": "",
+         "examples": [
+           "-73.577899"
+         ]
+       },
+       "LAT": {
+         "$id": "http://example.com/example.json/items/properties/LAT",
+         "type": "string",
+         "title": "The Lat Schema.",
+         "description": "An explanation about the purpose of this instance.",
+         "default": "",
+         "examples": [
+           "45.526243"
+         ]
+       }
+     }
+   }
+ }

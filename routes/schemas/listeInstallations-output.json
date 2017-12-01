@@ -1,0 +1,9 @@
+{
+  "type": "array",
+  "items": {
+    "type": "string",
+	"examples": [
+       "Aire de glissade, Ignace-Bourget"
+	]
+  }
+}
