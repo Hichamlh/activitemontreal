@@ -14,7 +14,7 @@ var crud = require('./crud.js');
 /**
  * Importation de données de la ville de Montréal qui s'execute automatiquement chaque jour à minuit.
  */
-cron.schedule('* * * * *', function () {
+cron.schedule('0 0 * * *', function () {
 
   console.log('Lancement de l\'importation automatique de données');
 
