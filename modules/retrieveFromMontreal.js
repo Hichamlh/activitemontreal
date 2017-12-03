@@ -104,26 +104,26 @@ function formatData(installations) {
     }
     installations = firstProp[key.slice(0, -1)].reduce(function (all, installation, index) {
       all.push({
-        typeInstallation: key.slice(0, -1),
-        nom: installation.nom,      
-        arrondissement: installation.arrondissement.nom_arr, 
-        cle: installation.arrondissement.cle,
-        date_maj: new Date(installation.arrondissement.date_maj),
-        ouvert: installation.ouvert,
-        deblaye: installation.deblaye,
-        arrose: (installation.arrose ? installation.arrose : "" ),
-        resurface: (installation.resurface ? installation.resurface : ""),
-        condition: installation.condition,
-        ID_UEV: "",
-        TYPE: "",
-        ADRESSE: "",
-        PROPRIETE: "",
-        GESTION: "",
-        POINT_X: "",
-        POINT_Y: "",
-        EQUIPEME: "",
-        LONG: "",
-        LAT: ""
+            typeInstallation: key.slice(0, -1),
+            nom: installation.nom.toLowerCase(),
+            arrondissement: installation.arrondissement.nom_arr.toLowerCase(),
+            cle: installation.arrondissement.cle.toLowerCase(),
+            date_maj: new Date(installation.arrondissement.date_maj),
+            ouvert: installation.ouvert,
+            deblaye: installation.deblaye,
+            arrose: (installation.arrose ? installation.arrose : "" ),
+            resurface: (installation.resurface ? installation.resurface : ""),
+            condition: installation.condition.toLowerCase(),
+            ID_UEV: "",
+            TYPE: "",
+            ADRESSE: "",
+            PROPRIETE: "",
+            GESTION: "",
+            POINT_X: "",
+            POINT_Y: "",
+            EQUIPEME: "",
+            LONG: "",
+            LAT: ""
       });
       return all;
     }, []);
@@ -137,29 +137,28 @@ function formatData(installations) {
 function formatDataPiscines(piscines) {
     piscines = piscines.reduce(function (all, piscine, index) {
       all.push({        
-        typeInstallation: "piscine",
-        nom: piscine.NOM,      
-        arrondissement: piscine.ARRONDISSE, 
-        cle: "",
-        date_maj: "",
-        ouvert: "",
-        deblaye: "",
-        arrose: "",
-        resurface: "",
-        condition: "",
-        ID_UEV: piscine.ID_UEV,
-        TYPE: piscine.TYPE,
-        ADRESSE: piscine.ADRESSE,
-        PROPRIETE: piscine.PROPRIETE,
-        GESTION: piscine.GESTION,
-        POINT_X: piscine.POINT_X,
-        POINT_Y: piscine.POINT_Y,
-        EQUIPEME: piscine.EQUIPEME,
-        LONG: piscine.LONG,
-        LAT: piscine.LAT        
-      });
-      return all;
-    }, []);
+            typeInstallation: "piscine",
+            nom: piscine.NOM.toLowerCase(),
+            arrondissement: piscine.ARRONDISSE.toLowerCase(),
+            cle: "",
+            date_maj: "",
+            ouvert: "",
+            deblaye: "",
+            arrose: "",
+            resurface: "",
+            condition: "",
+            ID_UEV: piscine.ID_UEV,
+            TYPE: piscine.TYPE.toLowerCase(),
+            ADRESSE: piscine.ADRESSE.toLowerCase(),
+            PROPRIETE: piscine.PROPRIETE.toLowerCase(),
+            GESTION: piscine.GESTION.toLowerCase(),
+            POINT_X: piscine.POINT_X,
+            POINT_Y: piscine.POINT_Y,
+            EQUIPEME: piscine.EQUIPEME.toLowerCase(),
+            LONG: piscine.LONG,
+            LAT: piscine.LAT
+        });
+        return all;    }, []);
   
     return piscines;
   }
