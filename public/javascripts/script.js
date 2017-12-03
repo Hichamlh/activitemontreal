@@ -90,7 +90,7 @@ $(document).ready(function () {
                     if (!data) {
                         body = '<li class="list-group-item">Aucune donnée trouvée</li>';
                     } else {
-                        body = '<li class="list-group-item"><b>Type : </b>' + data.typeInstallation + '</li>' +
+                        body = '<li class="list-group-item"><b>Type Installation : </b>' + data.typeInstallation + '</li>' +
                             '<li class="list-group-item"><b>Nom : </b>' + data.nom + '</li>' +
                             '<li class="list-group-item"><b>Arrondissement : </b>' + data.arrondissement + '</li>' +
                             '<li class="list-group-item"><b>Ouvert : </b>' + data.ouvert + '</li>' +
