@@ -64,6 +64,12 @@ $(document).ready(function () {
                         ]
                     });
 
+                    if(data.length==0){
+                        alert(' Donnee  Invalide Ou Inexistant');
+                        location.reload();
+
+                    }
+
                 },
 
                 error: function (err) {
