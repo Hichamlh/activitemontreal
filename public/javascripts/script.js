@@ -27,7 +27,7 @@ $(document).ready(function () {
     });
 
     $("#rechercherParArrondissement").click(function () {
-        var arrondissement = $('#arrondissementInput').val();
+        var arrondissement = $('#arrondissementInput').val().toLowerCase();
         if (!arrondissement) {
             alert("Veuillez saisir un nom d'arrondissement");
         } else {
