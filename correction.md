@@ -1,5 +1,8 @@
 #INF4375 – Paradigmes des échanges Internet
 #Projet de session - Automne 2017
+#Hicham Laroussi-Hassani
+#code permanant :LARH23107103
+
 
 ***
 
@@ -22,6 +25,16 @@ Le projet consiste à récupérer un ensemble de données provenant de la ville 
   |       C3       | 05 |
   |       F1       | 20 |
   |   **Total**    | 100|
+  
+#REMARQUE: 
+    La base de donnee est insere en miniscule, se qui implique pour la fonctionalite 
+    A4 de saisir l'arrondissement en miniscule direct dans l'URL.
+    Ex. GET /installations?arrondissement=lasalle
+    http://localhost:3000/installations?arrondissement=lasalle
+    
+    De meme pour obtenir la liste des installations en mauvaise condition, 
+    en cas ou vous aller utiliser une BD deja pret sur mongodb sa ne marchera pas, parcque
+    mon programme insert les donnees à partir de la source en miniscule.
 
 ##2-Technologies:
 
@@ -61,6 +74,8 @@ Le projet consiste à récupérer un ensemble de données provenant de la ville 
 
 ##5-Les URLs des interfaces graphiques en HTML
 
+  Lien heroku :
+  [https://tpinf-4375.herokuapp.com](https://tpinf-4375.herokuapp.com)
 
   Rechercher des installations par arrondissement ou par nom d'installation:
   [http://localhost:3000](http://localhost:3000)
