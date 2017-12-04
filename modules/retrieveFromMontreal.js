@@ -12,22 +12,23 @@ var crud = require('./crud.js');
 
 
 /**
- * Revoie les nouvelles installations en appliquant un filtre entre les données 
+ * Revoie les nouvelles installations en appliquant un filtre entre les données
  * de la ville de Montréal et les données de notre base de données.
  * @param {requestCallback} callback - Le callback qui renvoie la response.
  */
 exports.getNewInstallations = function (url, dataType, callback) {
     getMontrealInstallations(url, dataType, function (MontrealInstallations) {
         crud.getAllInstallations(function (listeInstallations) {
-        listeInstallations.forEach(function (element) {
-          MontrealInstallations = MontrealInstallations.filter(function (installation) {
-            return JSON.stringify(installation) !== JSON.stringify(element);
-          });
+            listeInstallations.forEach(function (element) {
+                MontrealInstallations = MontrealInstallations.filter(function (installation) {
+                    return JSON.stringify(installation) !== JSON.stringify(element);
+                });
+            });
+            callback(MontrealInstallations);
         });
-        callback(MontrealInstallations);
-      });
     });
-  }
+}
+
 
 /**
  * Revoie tous les installations de la ville de Montréal.
@@ -45,10 +46,10 @@ var getMontrealInstallations = function (url, dataType, callback) {
                 xmlToJson(body, function (installationsDeMontreal) {
                     callback(installationsDeMontreal);
                 });
-            }else{
+            } else {
                 csvToJson(body, function (installationsDeMontreal) {
                     callback(installationsDeMontreal);
-                  });
+                });
             }
 
         }
@@ -62,7 +63,7 @@ var getMontrealInstallations = function (url, dataType, callback) {
  */
 var xmlToJson = function (body, callback) {
 
-    var parser = new xml2js.Parser({ ignoreAttrs: true, explicitArray: false });
+    var parser = new xml2js.Parser({ignoreAttrs: true, explicitArray: false});
     parser.parseString(body, function (err, res) {
         var result = JSON.stringify(res);
         var jsonObject = JSON.parse(result);
@@ -73,37 +74,38 @@ var xmlToJson = function (body, callback) {
 
 
 /**
-* Transforme les données CSV de la ville de Montréal en JSON.
-*/
+ * Transforme les données CSV de la ville de Montréal en JSON.
+ */
 var csvToJson = function (body, callback) {
     var chunks = [];
     csv()
-        .fromString(body)
-        .on("json", (chunk) => {
-            chunks.push(chunk);
-        })
-        .on('done', (error) => {
-            var jsonObject = formatDataPiscines(chunks);
-            callback(jsonObject);
-        });
+    .fromString(body)
+    .on("json", (chunk) =>{
+        chunks.push(chunk);
+})
+
+    .on('done', (error) =>{
+        var jsonObject = formatDataPiscines(chunks);
+        callback(jsonObject);
+});
 
 }
 
 /**
- * Formater les données selon un format spécifique. 
+ * Formater les données selon un format spécifique.
  * Remplace le format String des dates en format ISO8601 pour Toutes les installations.
  */
 function formatData(installations) {
     var firstProp;
     var key;
-    for(key in installations) {
-        if(installations.hasOwnProperty(key)) {
+    for (key in installations) {
+        if (installations.hasOwnProperty(key)) {
             firstProp = installations[key];
             break;
         }
     }
     installations = firstProp[key.slice(0, -1)].reduce(function (all, installation, index) {
-      all.push({
+        all.push({
             typeInstallation: key.slice(0, -1),
             nom: installation.nom.toLowerCase(),
             arrondissement: installation.arrondissement.nom_arr.toLowerCase(),
@@ -124,19 +126,19 @@ function formatData(installations) {
             EQUIPEME: "",
             LONG: "",
             LAT: ""
-      });
-      return all;
+        });
+        return all;
     }, []);
-  
-    return installations;
-  }
 
-  /**
+    return installations;
+}
+
+/**
  * Formater les données Piscines selon un format spécifique.
  */
 function formatDataPiscines(piscines) {
     piscines = piscines.reduce(function (all, piscine, index) {
-      all.push({        
+        all.push({
             typeInstallation: "piscine",
             nom: piscine.NOM.toLowerCase(),
             arrondissement: piscine.ARRONDISSE.toLowerCase(),
@@ -158,7 +160,8 @@ function formatDataPiscines(piscines) {
             LONG: piscine.LONG,
             LAT: piscine.LAT
         });
-        return all;    }, []);
-  
+        return all;
+    }, []);
+
     return piscines;
-  }
+}

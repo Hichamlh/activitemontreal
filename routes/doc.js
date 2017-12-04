@@ -19,13 +19,13 @@ var raml2html = require('raml2html');
 var router = express.Router();
 
 router.get('/', function (req, res) {
-  var config = raml2html.getConfigForTheme();
-  raml2html.render("routes/doc/index.raml", config).then(function (html) {
-    res.send(html);
-  }, function (error) {
-    console.log(error);
-    res.sendStatus(500);
-  });
+    var config = raml2html.getConfigForTheme();
+    raml2html.render("routes/doc/index.raml", config).then(function (html) {
+        res.send(html);
+    }, function (error) {
+        console.log(error);
+        res.sendStatus(500);
+    });
 });
 
 module.exports = router;

@@ -1,218 +1,218 @@
-   {
-     "definitions": {},
-     "$schema": "http://json-schema.org/draft-06/schema#",
-     "$id": "http://example.com/example.json",
-     "type": "object",
-     "properties": {
-       "_id": {
-         "$id": "/properties/_id",
-         "type": "string",
-        "title": "The _id Schema.",
-        "description": "An explanation about the purpose of this instance.",
-        "default": "",
-        "examples": [
-          "5a1c99a4c48d35189ce872b4"
-        ]
-      },
-      "typeInstallation": {
-        "$id": "/properties/typeInstallation",
-        "type": "string",
-        "title": "The Typeinstallation Schema.",
-        "description": "An explanation about the purpose of this instance.",
-        "default": "",
-        "examples": [
-          "glissade"
-        ]
-      },
-      "nom": {
-        "$id": "/properties/nom",
-        "type": "string",
-        "title": "The Nom Schema.",
-        "description": "An explanation about the purpose of this instance.",
-        "default": "",
-        "examples": [
-          "Aire de glissade, Le Ber"
-        ]
-      },
-      "arrondissement": {
-        "$id": "/properties/arrondissement",
-        "type": "string",
-        "title": "The Arrondissement Schema.",
-        "description": "An explanation about the purpose of this instance.",
-        "default": "",
-        "examples": [
-          "Le Sud-Ouest"
-        ]
-      },
-      "cle": {
-        "$id": "/properties/cle",
-        "type": "string",
-        "title": "The Cle Schema.",
-        "description": "An explanation about the purpose of this instance.",
-        "default": "",
-        "examples": [
-          "sou"
-        ]
-      },
-      "date_maj": {
-        "$id": "/properties/date_maj",
-        "type": "string",
-        "title": "The Date_maj Schema.",
-        "description": "An explanation about the purpose of this instance.",
-        "default": "",
-        "examples": [
-          "2017-11-23T13:13:51.000Z"
-        ]
-      },
-      "ouvert": {
-        "$id": "/properties/ouvert",
-        "type": "string",
-        "title": "The Ouvert Schema.",
-        "description": "An explanation about the purpose of this instance.",
-        "default": "",
-        "examples": [
-          "0"
-        ]
-      },
-      "deblaye": {
-        "$id": "/properties/deblaye",
-        "type": "string",
-        "title": "The Deblaye Schema.",
-        "description": "An explanation about the purpose of this instance.",
-        "default": "",
-        "examples": [
-          "0"
-        ]
-      },
-      "arrose": {
-        "$id": "/properties/arrose",
-        "type": "string",
-        "title": "The Arrose Schema.",
-        "description": "An explanation about the purpose of this instance.",
-        "default": "",
-        "examples": [
-          ""
-        ]
-      },
-      "resurface": {
-        "$id": "/properties/resurface",
-        "type": "string",
-       "title": "The Resurface Schema.",
-       "description": "An explanation about the purpose of this instance.",
-       "default": "",
-       "examples": [
-         ""
-       ]
-     },
-     "condition": {
-       "$id": "/properties/condition",
-       "type": "string",
-       "title": "The Condition Schema.",
-       "description": "An explanation about the purpose of this instance.",
-       "default": "",
-       "examples": [
-         "N/A"
-       ]
-     },
-     "ID_UEV": {
-       "$id": "/properties/ID_UEV",
-       "type": "string",
-       "title": "The Id_uev Schema.",
-       "description": "An explanation about the purpose of this instance.",
-       "default": "",
-       "examples": [
-         ""
-       ]
-     },
-     "TYPE": {
-       "$id": "/properties/TYPE",
-       "type": "string",
-       "title": "The Type Schema.",
-       "description": "An explanation about the purpose of this instance.",
-       "default": "",
-       "examples": [
-         ""
-       ]
-     },
-     "ADRESSE": {
-       "$id": "/properties/ADRESSE",
-       "type": "string",
-       "title": "The Adresse Schema.",
-       "description": "An explanation about the purpose of this instance.",
-       "default": "",
-       "examples": [
-         ""
-       ]
-     },
-     "PROPRIETE": {
-       "$id": "/properties/PROPRIETE",
-       "type": "string",
-       "title": "The Propriete Schema.",
-       "description": "An explanation about the purpose of this instance.",
-       "default": "",
-       "examples": [
-         ""
-       ]
-     },
-     "GESTION": {
-       "$id": "/properties/GESTION",
-       "type": "string",
-       "title": "The Gestion Schema.",
-       "description": "An explanation about the purpose of this instance.",
-       "default": "",
-       "examples": [
-         ""
-       ]
-     },
-     "POINT_X": {
-       "$id": "/properties/POINT_X",
-       "type": "string",
-       "title": "The Point_x Schema.",
-       "description": "An explanation about the purpose of this instance.",
-       "default": "",
-       "examples": [
-         ""
-       ]
-     },
-     "POINT_Y": {
-       "$id": "/properties/POINT_Y",
-       "type": "string",
-       "title": "The Point_y Schema.",
-       "description": "An explanation about the purpose of this instance.",
-       "default": "",
-       "examples": [
-         ""
-       ]
-     },
-     "EQUIPEME": {
-       "$id": "/properties/EQUIPEME",
-       "type": "string",
-       "title": "The Equipeme Schema.",
-       "description": "An explanation about the purpose of this instance.",
-       "default": "",
-       "examples": [
-         ""
-       ]
-     },
-     "LONG": {
-       "$id": "/properties/LONG",
-       "type": "string",
-       "title": "The Long Schema.",
-       "description": "An explanation about the purpose of this instance.",
-       "default": "",
-       "examples": [
-         ""
-       ]
-     },
-     "LAT": {
-       "$id": "/properties/LAT",
-       "type": "string",
-       "title": "The Lat Schema.",
-       "description": "An explanation about the purpose of this instance.",
-       "default": "",
-       "examples": [
-         ""
-       ]
-     }
-   }
- }
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "_id": {
+      "$id": "/properties/_id",
+      "type": "string",
+      "title": "The _id Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "5a1c99a4c48d35189ce872b4"
+      ]
+    },
+    "typeInstallation": {
+      "$id": "/properties/typeInstallation",
+      "type": "string",
+      "title": "The Typeinstallation Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "glissade"
+      ]
+    },
+    "nom": {
+      "$id": "/properties/nom",
+      "type": "string",
+      "title": "The Nom Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Aire de glissade, Le Ber"
+      ]
+    },
+    "arrondissement": {
+      "$id": "/properties/arrondissement",
+      "type": "string",
+      "title": "The Arrondissement Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Le Sud-Ouest"
+      ]
+    },
+    "cle": {
+      "$id": "/properties/cle",
+      "type": "string",
+      "title": "The Cle Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "sou"
+      ]
+    },
+    "date_maj": {
+      "$id": "/properties/date_maj",
+      "type": "string",
+      "title": "The Date_maj Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "2017-11-23T13:13:51.000Z"
+      ]
+    },
+    "ouvert": {
+      "$id": "/properties/ouvert",
+      "type": "string",
+      "title": "The Ouvert Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "0"
+      ]
+    },
+    "deblaye": {
+      "$id": "/properties/deblaye",
+      "type": "string",
+      "title": "The Deblaye Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "0"
+      ]
+    },
+    "arrose": {
+      "$id": "/properties/arrose",
+      "type": "string",
+      "title": "The Arrose Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "resurface": {
+      "$id": "/properties/resurface",
+      "type": "string",
+      "title": "The Resurface Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "condition": {
+      "$id": "/properties/condition",
+      "type": "string",
+      "title": "The Condition Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "N/A"
+      ]
+    },
+    "ID_UEV": {
+      "$id": "/properties/ID_UEV",
+      "type": "string",
+      "title": "The Id_uev Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "TYPE": {
+      "$id": "/properties/TYPE",
+      "type": "string",
+      "title": "The Type Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "ADRESSE": {
+      "$id": "/properties/ADRESSE",
+      "type": "string",
+      "title": "The Adresse Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "PROPRIETE": {
+      "$id": "/properties/PROPRIETE",
+      "type": "string",
+      "title": "The Propriete Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "GESTION": {
+      "$id": "/properties/GESTION",
+      "type": "string",
+      "title": "The Gestion Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "POINT_X": {
+      "$id": "/properties/POINT_X",
+      "type": "string",
+      "title": "The Point_x Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "POINT_Y": {
+      "$id": "/properties/POINT_Y",
+      "type": "string",
+      "title": "The Point_y Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "EQUIPEME": {
+      "$id": "/properties/EQUIPEME",
+      "type": "string",
+      "title": "The Equipeme Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "LONG": {
+      "$id": "/properties/LONG",
+      "type": "string",
+      "title": "The Long Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "LAT": {
+      "$id": "/properties/LAT",
+      "type": "string",
+      "title": "The Lat Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    }
+  }
+}

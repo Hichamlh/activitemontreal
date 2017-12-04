@@ -1,90 +1,90 @@
 doctype html
 html
-  head
-    title Activite Montrealaise
-    |   
-    meta(charset='utf-8')
-    |   
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    |   
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
-    |   
-    link(rel='stylesheet', href='https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css')
-    |   
-    |   
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
-    |   
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-    |   
-    | &#x9;
-    script(src='https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js')
-    | &#x9;
-    script(src='javascripts/script.js')
-  body
-    .panel.panel-default
-      .panel-heading Rechercher une installation
-      |   
-      .panel-body
-        .container
-          .form-group
-            label.col-sm-2.control-label(for='arrondissementInput') Arrondissement : 
-            | &#x9;&#x9;&#x9;
-            .col-sm-5
-              input#arrondissementInput.form-control(type='text', placeholder="Saisir un nom d'arrondissement")
-            | &#x9;&#x9;&#x9;
-            button#rechercherParArrondissement.btn.btn-success(type='button') Rechercher
-          | &#x9;&#x9;  
-          | &#x9;&#x9;
-          | &#x9;&#x9;
-          .panel-body
-            table#table_id.display
-              thead
-                tr
-                  th Type Installation
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th Nom
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th Arrondissement
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th Ouvert
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th Deblaye
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th Arrose
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th Resurface
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th Condition
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th ID_UEV
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th TYPE
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th ADRESSE
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th PROPRIETE
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th GESTION
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th POINT_X
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th POINT_Y
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th EQUIPEME
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th LONG
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                  th LAT
-              | &#x9;&#x9;&#x9;&#x9;
-              tbody
-          | &#x9;&#x9;
-          .form-group
-            label.col-sm-2.control-label(for='installationInput') Nom d&apos;installation : 
-            | &#x9;&#x9;&#x9;
-            .col-sm-5
-              select#listeInstallation.form-control(name='listeInstallation')
-            | &#x9;&#x9;&#x9;
-            button#rechercherParInstallation.btn.btn-success(type='button') Rechercher
-          | &#x9;&#x9;
-          ul#detail.list-group
+    head
+        title Activite Montrealaise
+        |
+        meta(charset='utf-8')
+        |
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        |
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+        |
+        link(rel='stylesheet', href='https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css')
+        |
+        |
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        |
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+        |
+        | &#x9;
+        script(src='https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js')
+        | &#x9;
+        script(src='javascripts/script.js')
+    body
+        .panel.panel-default
+            .panel-heading Rechercher une installation
+            |
+            .panel-body
+                .container
+                    .form-group
+                        label.col-sm-2.control-label(for='arrondissementInput') Arrondissement :
+                        | &#x9;&#x9;&#x9;
+                        .col-sm-5
+                            input#arrondissementInput.form-control(type='text', placeholder="Saisir un nom d'arrondissement")
+                        | &#x9;&#x9;&#x9;
+                        button#rechercherParArrondissement.btn.btn-success(type='button') Rechercher
+                    | &#x9;&#x9;
+                    | &#x9;&#x9;
+                    | &#x9;&#x9;
+                    .panel-body
+                        table#table_id.display
+                            thead
+                                tr
+                                    th Type Installation
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th Nom
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th Arrondissement
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th Ouvert
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th Deblaye
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th Arrose
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th Resurface
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th Condition
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th ID_UEV
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th TYPE
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th ADRESSE
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th PROPRIETE
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th GESTION
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th POINT_X
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th POINT_Y
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th EQUIPEME
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th LONG
+                                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                                    th LAT
+                            | &#x9;&#x9;&#x9;&#x9;
+                            tbody
+                    | &#x9;&#x9;
+                    .form-group
+                        label.col-sm-2.control-label(for='installationInput') Nom d&apos;installation :
+                        | &#x9;&#x9;&#x9;
+                        .col-sm-5
+                            select#listeInstallation.form-control(name='listeInstallation')
+                        | &#x9;&#x9;&#x9;
+                        button#rechercherParInstallation.btn.btn-success(type='button') Rechercher
+                    | &#x9;&#x9;
+                    ul#detail.list-group

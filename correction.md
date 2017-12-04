@@ -27,6 +27,7 @@ Le projet consiste à récupérer un ensemble de données provenant de la ville 
   |   **Total**    | 100|
   
 #REMARQUE: 
+
     La base de donnee est insere en miniscule, se qui implique pour la fonctionalite 
     A4 de saisir l'arrondissement en miniscule direct dans l'URL.
     Ex. GET /installations?arrondissement=lasalle
@@ -35,6 +36,7 @@ Le projet consiste à récupérer un ensemble de données provenant de la ville 
     De meme pour obtenir la liste des installations en mauvaise condition, 
     en cas ou vous aller utiliser une BD deja pret sur mongodb sa ne marchera pas, parcque
     mon programme insert les donnees à partir de la source en miniscule.
+    
 
 ##2-Technologies:
 

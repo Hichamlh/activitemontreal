@@ -19,7 +19,7 @@ module.exports.getInstallations = function (callback) {
             if (err) {
                 return callback(err, null);
             } else {
-                installation.find({"condition": "Mauvaise"}, {_id: 0}).sort({nom: 1}).toArray(function (err, installationList) {
+                installation.find({"condition": "mauvaise"}, {_id: 0}).sort({nom: 1}).toArray(function (err, installationList) {
                     if (err) {
                         callback(err, null);
                     } else {
