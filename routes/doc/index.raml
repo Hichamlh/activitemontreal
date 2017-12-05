@@ -12,7 +12,7 @@ version: 1
         description: Nom arrondissement.
         type: string
         required: true
-        example: "http://localhost:3000/installations?arrondissement=lasalle"
+        example: "https://activitemontreal.herokuapp.com/installations?arrondissement=lasalle"
     responses:
       200:
         description: La liste des installations pour un arrondissement spécifié en paramètre.
@@ -24,13 +24,13 @@ version: 1
       500:
         description: Une erreur interne s'est produite.
 
-/installationMauvaise:
+/conditionInstallation:
   /json:
     get:
-      description: Fournir la liste des installations en mauvaise condition.
+      description: Fournir la liste des installations en bonne condition  ou sans objet.
       responses:
         200:
-          description: La liste des installations en mauvaise condition, La liste est triée en ordre croissant du nom de l'installation.
+          description: La liste des installations en bonne condition  ou sans objet, La liste est triée en ordre croissant du nom de l'installation.
           body:
             application/json:
               schema: !include ../schemas/installationMauvaise-output.json
@@ -38,20 +38,20 @@ version: 1
           description: Une erreur interne s'est produite.
   /xml:
     get:
-      description: Fournir la liste des installations en mauvaise condition.
+      description: Fournir la liste des installations en bonne condition  ou sans objet.
       responses:
         200:
-          description: La liste des installations en mauvaise condition, La liste est triée en ordre croissant du nom de l'installation.
+          description: La liste des installations en bonne condition  ou sans objet, La liste est triée en ordre croissant du nom de l'installation.
           body:
             application/xml:
         500:
           description: Une erreur interne s'est produite.
   /csv:
     get:
-      description: Fournir la liste des installations en mauvaise condition.
+      description: Fournir la liste des installations en bonne condition  ou sans objet.
       responses:
         200:
-          description: La liste des installations en mauvaise condition, La liste est triée en ordre croissant du nom de l'installation.
+          description: La liste des installations en bonne condition  ou sans objet, La liste est triée en ordre croissant du nom de l'installation.
           body:
             application/csv:
         500:
@@ -64,7 +64,7 @@ version: 1
         description: Un nom d'installation.
         type: string
         required: true
-        example: "http://localhost:3000/installationParNom?nom=patinoire%20avec%20bandes,%20le%20ber%20(pse)"
+        example: "https://activitemontreal.herokuapp.com/installationParNom?nom=patinoire%20avec%20bandes,%20le%20ber%20(pse)"
     responses:
       200:
         description: Les informations sur une installation par nom.
@@ -80,7 +80,7 @@ version: 1
 
 /getNomInstallation:
   get:
-    description: Fournir la liste des installations. localhost:3000/getNomInstallation
+    description: Fournir la liste des installations. https://activitemontreal.herokuapp.com/getNomInstallation
     responses:
       200:
         description: La liste triée des installations a été correctement envoyée.
