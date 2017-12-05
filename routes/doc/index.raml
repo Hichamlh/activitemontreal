@@ -27,7 +27,7 @@ version: 1
 /conditionInstallation:
   /json:
     get:
-      description: Fournir la liste des installations en bonne ou sans object condition.
+      description: Fournir la liste des installations en bonne condition ou sans object .
       responses:
         200:
           description: La liste des installations en bonne condition, La liste est triée en ordre croissant du nom de l'installation.
@@ -38,20 +38,20 @@ version: 1
           description: Une erreur interne s'est produite.
   /xml:
     get:
-      description: Fournir la liste des installations en mauvaise condition.
+      description: Fournir la liste des installations en bonne condition ou sans object .
       responses:
         200:
-          description: La liste des installations en mauvaise condition, La liste est triée en ordre croissant du nom de l'installation.
+          description: La liste des installations en bonne condition ou sans object, La liste est triée en ordre croissant du nom de l'installation.
           body:
             application/xml:
         500:
           description: Une erreur interne s'est produite.
   /csv:
     get:
-      description: Fournir la liste des installations en mauvaise condition.
+      description: Fournir la liste des installations en bonne condition ou sans object .
       responses:
         200:
-          description: La liste des installations en mauvaise condition, La liste est triée en ordre croissant du nom de l'installation.
+          description: La liste des installations en bonne condition ou sans object, La liste est triée en ordre croissant du nom de l'installation.
           body:
             application/csv:
         500:
