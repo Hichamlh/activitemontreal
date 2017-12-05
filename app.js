@@ -12,7 +12,7 @@ var doc = require('./routes/doc');
 var installations = require('./routes/installations');
 var getNomInstallation = require('./routes/getNomInstallation');
 var installationParNom = require('./routes/installationParNom');
-var installationMauvaise = require('./routes/installationMauvaise');
+var installationMauvaise = require('./routes/installation');
 
 var app = express();
 
