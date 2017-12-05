@@ -21,7 +21,7 @@ module.exports.getConnection = function(callback) {
   if (instanceMongoDB) {
     callback(null, instanceMongoDB);
   } else {
-    var server = new mongodb.Server("ds013475.mlab.com", 13475, {auto_reconnect: true});
+    var server = new mongodb.Server("ds125896.mlab.com",25896, {auto_reconnect: true});
     var db = new mongodb.Db("recreatives", server, {safe: true});
 
     if (!db.openCalled) {
