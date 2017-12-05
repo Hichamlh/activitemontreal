@@ -34,7 +34,7 @@ app.use('/doc', doc);
 app.use('/installations', installations);
 app.use('/getNomInstallation', getNomInstallation);
 app.use('/installationParNom', installationParNom);
-app.use('/installationMauvaise', installationMauvaise);
+app.use('/installationMauvaise', conditionInstallation);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
