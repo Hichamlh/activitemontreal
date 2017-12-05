@@ -30,7 +30,7 @@ version: 1
       description: Fournir la liste des installations en bonne condition ou sans object .
       responses:
         200:
-          description: La liste des installations en bonne condition, La liste est triée en ordre croissant du nom de l'installation.
+          description: La liste des installations en bonne condition ou sans object, La liste est triée en ordre croissant du nom de l'installation.
           body:
             application/json:
               schema: !include ../schemas/installationMauvaise-output.json
